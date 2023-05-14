@@ -30,6 +30,45 @@
     filter: brightness(50%);
 }
 
+/* Hover en NavBar */
+
+/*** ESTILOS BOTÓN SLIDE BOTTOM ***/
+.ov-btn-slide-bottom {
+    background: #ffffff00; /* color de fondo */
+    color: #ebebf2; /* color de fuente */
+     /* tamaño y color de borde */
+    padding: 16px 20px;
+    border-radius: 3px; /* redondear bordes */
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+  }
+  .ov-btn-slide-bottom:hover {
+    color: #fff; /* color de fuente hover */
+  }
+  .ov-btn-slide-bottom::after {
+    content: "";
+    background: #38373e; /* color de fondo hover */
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    left: 0;
+    right: 0;
+    top: 100%;
+    bottom: -100%;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+  }
+  .ov-btn-slide-bottom:hover::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+  }
 
 /* Oradores */
 .card-css {
@@ -67,24 +106,6 @@ textarea::placeholder {
     font-size: 0.8rem;
 }
 
-/* Boton flotante */
-.cmn-divfloat {
-    position: fixed !important;
-    bottom: 45px;
-    right: 15px;
-    display: none;
-  }
-  
-.cmn-btncircle {
-    width: 40px !important;
-    height: 40px !important;
-    padding: 6px 0px;
-    border-radius: 50%;
-    font-size: 18px;
-    text-align: center;
-    opacity: .8;
-}
- 
 
 /* Adaptable (responsivo) */
 
