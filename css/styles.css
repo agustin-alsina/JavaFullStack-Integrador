@@ -70,6 +70,10 @@
     transition: all 0.35s;
   }
 
+  .colorVerde {
+    color: green;
+  }
+
 /* Oradores */
 .card-css {
     width: 18rem;
@@ -85,7 +89,7 @@
 }
 
 .subrayado-puntos {
-    text-decoration: underline dotted;   
+    text-decoration: underline dotted;
 }
 
 
@@ -109,7 +113,7 @@ textarea::placeholder {
 
 /* Adaptable (responsivo) */
 
-@media screen and (max-width: 500px)
+/* @media screen and (max-width: 500px)
 {
   .navbar-brand 
   {
@@ -144,5 +148,5 @@ textarea::placeholder {
         display: flex;
         flex-direction: column;
         height: auto;
-    }
+    } */
 }
